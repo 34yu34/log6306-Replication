@@ -6,3 +6,5 @@
 *.gz
 *.xdv
 *.out
+
+!Refactorings_and_Technical_Debt_in_Docker_Projects_An_Empirical_Study.pdf
