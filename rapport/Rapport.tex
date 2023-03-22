@@ -56,19 +56,25 @@ They fetch these with the help of the GitHub archive BigQuery that contained a t
 Their selection process skimed the project that where fork from other and the non existing ones.
 Looking into keywords, any commits with REFACTOR in it has been kept.
 this resulted in 4,469 commits with a maximum of 73 commits per repository, finally keeping only 68 that where mostly written in java.
-having looked into the other project, most of which not written in java, 
+
 
 The replication used only 10\% of the data of the first study to verify the conclusion.
-The data was randomly picked throughout all data sections of the first study. 
+the process for the seleciton of the subdata set was to focus on random commit at first. 
+However, further looking into the data we decided to keep the same ratios of docker and docker-compose files.
+Finally, taking the whole list of commit from the replication package, every n commit(depending on the list size) were taken into the subdata set.
 A manual check was then done on all the selected subdata where the study conclusion were confirm.
 From the manual check, 4 possible outcomes were looked at: the initial conclusion was good, the change was not a refactor, the change was a refactor but from a different type and something that was assumed not to be a refactor was deduced to be one.  
-Once the first categorisation done in the subdata set, a second check was done on the data that had been refactor to see if the types of the refactorings could be expanded.
+Once the first categorisation done in the subdata set, a second check was specifically done on the data that was refactored to see if the types of the refactorings could be expanded.
 
 \section{Results}
 
 \section{Implication and Discussion}
 
 \section{Validity}
+
+This replication study shares validity threats with the study from \cite{1} which it replicates.
+More specificly, it shares all the same issue with data gathering than the first study since the data taken was exactly the same.
+However, some other threats came from the subdata selection process, which could have not been representative of the total data.
 
 \section{Conclusion}
 
