@@ -48,6 +48,7 @@ The research from \cite{1} try to categorize the different refactoring practices
 Few study before the one being replicated have study the maintenance cycle of docker projects.
 Thus, the importance of this study and of the work of categorisation it has done.
 This replication will challenge the methodology process and the results obtain by \cite{1}.
+The main focus of this replication isn't to add more commits and projects to the pool in order to confirm the conclusion, but to look at the already analyzed data and verify the conclusions. 
 
 \section{Methodology}
 
@@ -55,16 +56,20 @@ The research looked into a total of 68 open-source projects with over 19 MLOC.
 They fetch these with the help of the GitHub archive BigQuery that contained a total of 2000+ docker projects.
 Their selection process skimed the project that where fork from other and the non existing ones.
 Looking into keywords, any commits with REFACTOR in it has been kept.
-this resulted in 4,469 commits with a maximum of 73 commits per repository, finally keeping only 68 that where mostly written in java.
+this resulted in 4,469 projects with a maximum of 73 commits per repository, finally keeping only 68 project and 193 commits that where mostly written in java.
+The commit ranged from 1 to 12 per project with a total of 611 files changed.
 
-
-The replication used only 10\% of the data of the first study to verify the conclusion.
-the process for the seleciton of the subdata set was to focus on random commit at first. 
+The replication used only 10\% of the data of the first study (around 62 file change) to verify the conclusion.
+The process for the seleciton of the subdata set was initially random based. 
 However, further looking into the data we decided to keep the same ratios of docker and docker-compose files.
 Finally, taking the whole list of commit from the replication package, every n commit(depending on the list size) were taken into the subdata set.
-A manual check was then done on all the selected subdata where the study conclusion were confirm.
-From the manual check, 4 possible outcomes were looked at: the initial conclusion was good, the change was not a refactor, the change was a refactor but from a different type and something that was assumed not to be a refactor was deduced to be one.  
+This permitted to spread all the analyze data equally accross projects and changes.
+A manual check was then done on all the selected subdata where the study conclusion where looked at to be either confirm or infirm.
+From the manual check, 4 possible outcomes were looked at.
+Either the initial conclusion was good, the change was not a refactor, the change was a refactor but from a different type or something that was assumed not to be a refactor was deduced to be one.
 Once the first categorisation done in the subdata set, a second check was specifically done on the data that was refactored to see if the types of the refactorings could be expanded.
+The goal of this second phase was to see if the initial conclusion of the study really considered all the possible refactors of a docker or docker-compose file.
+
 
 \section{Results}
 
