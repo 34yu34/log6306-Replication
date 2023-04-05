@@ -10,7 +10,7 @@
 \usepackage{verbatim}
 \usepackage{graphicx}
 \usepackage{cite}
-\hyphenation{op-tical net-works semi-conduc-tor IEEE-Xplore}
+%\hyphenation{op-tical net-works semi-conduc-tor IEEE-Xplore}
 % updated with editorial comments 8/9/2021
 
 \begin{document}
@@ -19,22 +19,25 @@
 
 \author{Billy Bouchard, Quentin }
         % <-this % stops a space
-\thanks{This paper was produced by the IEEE Publication Technology Group. They are in Piscataway, NJ.}% <-this % stops a space
-\thanks{Manuscript received April 19, 2021; revised August 16, 2021.}
+%\thanks{This paper was produced by the IEEE Publication Technology Group. They are in Piscataway, NJ.}% <-this % stops a space
+%\thanks{Manuscript received April 19, 2021; revised August 16, 2021.}
 
 % The paper headers
-\markboth{Journal of \LaTeX\ Class Files,~Vol.~14, No.~8, August~2021}%
-{Shell \MakeLowercase{\textit{et al.}}: A Sample Article Using IEEEtran.cls for IEEE Journals}
+%\markboth{Journal of \LaTeX\ Class Files,~Vol.~14, No.~8, August~2021}%
+%{Shell \MakeLowercase{\textit{et al.}}: A Sample Article Using IEEEtran.cls for IEEE Journals}
 
 \maketitle
 
 \begin{abstract}
 This document is intended to be a replication study of the work of \cite{1} on the refactorings and technical debt in docker projects.
+Our team tried to do a second pass on part of the daat of the main study and observe how different\/similar our conclusions were.
+Our check helped us observed that the intial conclusion of \cite{1} were oriented mostly around performances.
+We were able to add a total of 3 new refactors to the schema. 
 \end{abstract}
 
-\begin{IEEEkeywords}
-Article submission, IEEE, IEEEtran, journal, \LaTeX, paper, template, typesetting.
-\end{IEEEkeywords}
+%\begin{IEEEkeywords}
+%Article submission, IEEE, IEEEtran, journal, \LaTeX, paper, template, typesetting.
+%\end{IEEEkeywords}
 
 \section{Introduction}
 Distributed systems have many uses, but also have many flaws, one of which being the lack of standard between the systems that you deploy on.
@@ -56,20 +59,32 @@ The research looked into a total of 68 open-source projects with over 19 MLOC.
 They fetch these with the help of the GitHub archive BigQuery that contained a total of 2000+ docker projects.
 Their selection process skimed the project that where fork from other and the non existing ones.
 Looking into keywords, any commits with REFACTOR in it has been kept.
-this resulted in 4,469 projects with a maximum of 73 commits per repository, finally keeping only 68 project and 193 commits that where mostly written in java.
+this resulted in 4,469 commits with a maximum of 73 commits per repository, finally keeping only 68 project and 193 commits that where mostly written in java.
 The commit ranged from 1 to 12 per project with a total of 611 files changed.
 
-The replication used only 10\% of the data of the first study (around 62 file change) to verify the conclusion.
-The process for the seleciton of the subdata set was initially random based. 
+The replication aimed at only 10\% of the data of the first study (maximum 62 file change) to verify the conclusion.
+The process for the seleciton of the sub-data set was initially random based. 
 However, further looking into the data we decided to keep the same ratios of docker and docker-compose files.
 Finally, taking the whole list of commit from the replication package, every n commit(depending on the list size) were taken into the subdata set.
-This permitted to spread all the analyze data equally accross projects and changes.
-A manual check was then done on all the selected subdata where the study conclusion where looked at to be either confirm or infirm.
-From the manual check, 4 possible outcomes were looked at.
+This permitted to spread all the analyzed data equally accross projects and changes leading to a fair number of commit from each projects in the sub-data set.
+A manual check was then done on all the selected sub-data where the study conclusion where looked at to be either confirm or infirm.
+\begin{quote}
+        RQ0. Are the main article conclusion accurate.
+\end{quote}
+From the manual check, 4 possible outcomes were looked at;
 Either the initial conclusion was good, the change was not a refactor, the change was a refactor but from a different type or something that was assumed not to be a refactor was deduced to be one.
-Once the first categorisation done in the subdata set, a second check was specifically done on the data that was refactored to see if the types of the refactorings could be expanded.
+Once all the sub-data commit looked at, we would be able to gather both the precision and the recall of the data.
+We also kept a statistics of every commit that were either change after debates or not change after debates.
+The point being that we wanted to know how subjective and debatable all the gather data were.
+We hope these numbers should be similar to what \cite{1} would have had in their first study.
+After a first pass at the data, we notice a tendancy for the considered refactor to be oriented toward the performance more than readability or understanding. 
+Then, a second check was specifically done on the data (from the sub-data) that was refactored to see if the types of the refactorings could be expanded.
 The goal of this second phase was to see if the initial conclusion of the study really considered all the possible refactors of a docker or docker-compose file.
-
+\begin{quote}
+        RQ1. Can the main article refactor categories and type be expanded.
+\end{quote}
+At the end of the second pass, we gather groups of commits that we thought might bring new categories to the article.
+Our team added the categories that all were in favor of.
 
 \section{Results}
 
@@ -79,9 +94,20 @@ The goal of this second phase was to see if the initial conclusion of the study 
 
 This replication study shares validity threats with the study from \cite{1} which it replicates.
 More specificly, it shares all the same issue with data gathering than the first study since the data taken was exactly the same.
-However, some other threats came from the subdata selection process, which could have not been representative of the total data.
+However, some other concerns might come from the sub-data selection process, which could have not been representative of the total data.
+To minimize the impact, we tried to take commits from all the projects.
+Moreover, we sample in the same ratios as the initial study the amount of docker file versus the amount of docker-compose.
+
+Other threats to validity comes from the subjective nature of the study.
+To minimize the impact on that end, we decided that unless all teams member agreed on a difference, the study initial results would be kept.
+Also, every type added went through a discussion form the whole team where every member had to agree in order for that category to be added.
 
 \section{Conclusion}
+this study helped us dwelve deeper into the different refactor that happens around docker projects.
+We were able to see that manual checking can lead to a very variable array of solutions.
+We also observe that new potential categories could be added to the projects to add more variety to the refactors propose by the main article authors.
+
+As \cite{1} says, the next step of development should aim at creating new automated approch to quickly find refactoring opportunities and propose them to code authors.
 
 \section{References Section}
 %
