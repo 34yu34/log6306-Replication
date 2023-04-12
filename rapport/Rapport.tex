@@ -60,7 +60,7 @@ Thus, the importance of this study and of the work of categorisation it has done
 This replication will challenge the methodology process, and the results obtained by \cite{1}.
 The main focus of this replication is not to add more commits or projects to the pool, but to look at the already analyzed data and verify the results and conclusions.
 
-\section{Methodology}
+\section{Methodology}\label{sec:methodology}
 
 The research investigated a total of 68 open-source projects with over 19 MLOC.
 The selection of these 68 projects was done with the help of the GitHub BigQuery archive, that contains a total of 2000+ Docker projects.
@@ -102,9 +102,26 @@ Our team added the categories that all were in favor of.
 
 \section{Results}
 
+Our results are available on GitHub\footnote{https://github.com/34yu34/log6306-Replication}.
 
+Two main files are made available: \texttt{docker-file.md} and \texttt{docker-compose.md}. These files contain our results for the Dockerfile and docker-compose files respectively.
+Although we separated the tables between the team members, a common discussion was carried out, as described in the Section \ref{sec:methodology}.
+A checkmark in the \textit{notes} column means that the conclusion of the initial study was confirmed by minimum one of our team member.
+Otherwise, this is either a mistake in the data of the original report, or a comment that we had to make to nuance their results.
 
-\section{Implication and Discussion}
+The first major thing we noticed is the very important subjectivity of the results.
+This is probably due to a lack of precise definition of refactoring types by the original study.
+Not only are there debates within our team about certain refactorings, but this problem can also be found in the original report.
+For example, the \textit{Update RUN Instruction} type is subjective.
+As stated in our replication data, there is a commit that the authors considered as an update to the run command, where the operator \texttt{\&\&} was moved from the end of a line to the beginning of the next line.
+That being said, another commit adding a space to the command is not considered as a refactoring.
+According to us, this is a major problem in the definitions of refactoring types, that can lead to inconsistencies in the results.
+
+In the continuity of this first problem, we also note inconsistencies in the descriptions of the commits that the authors have made.
+Some descriptions describe all changes made in a commit, whereas others only describe the changes that are considered as refactoring.
+Although this issue may not be reflected in the final results, it is important to take this into account in case someone wants to reuse these results in another study.
+
+% \section{Implication and Discussion}
 
 \section{Validity}
 
