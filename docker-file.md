@@ -2,7 +2,7 @@
 
 ## Quentin
 
-| Line | Link                                                                                                                                                                                           | Notes                                                                                                                                                                             |
+| Line | Links                                                                                                                                                                                          | Notes                                                                                                                                                                             |
 | ---: | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 |   16 | [Change](https://github.com/amazeeio/lagoon/commit/2a08bb4361b86099224dda25b4110e818dfde934#diff-4ccc9128814a5c260f2b57a07deb1bb660a455f002d21bc1c0becd57614b1e9a)                             | ✔️                                                                                                                                                                                 |
 |   32 | [Change](https://github.com/amazeeio/lagoon/commit/fd6b0db52f09dc5a67231c579f745b8df2eb716a#diff-34fe043efff3c2c5c6a595d2327d94f13a2836a055dba6f05b3bbef241463aca)                             | ✔️                                                                                                                                                                                 |
@@ -28,9 +28,9 @@
 |  352 | [Change](https://github.com/unbalancedparentheses/docker-erlang/commit/9787e1af27210812805e92a5b70f78db37921013#diff-78c867086a1a1b072c2001db9a1c92def0fd771ed4556205004dd1c99b555474)         | Missing "Add ENV variable" (DEBIAN_FRONTEND).                                                                                                                                     |
 |  368 | [Change](https://github.com/unbalancedparentheses/docker-erlang/commit/9787e1af27210812805e92a5b70f78db37921013#diff-49cc3f61adf9f674f4611469acc095c5785fb295992b8dc3cc89e420bcb406f5)         | Missing "Add ENV variable" (DEBIAN_FRONTEND).                                                                                                                                     |
 
-## Billy 
+## Billy
 
-| Line | Link                                                                                                                                                                                        | Note                                            |
+| Line | Links                                                                                                                                                                                       | Notes                                           |
 | ---- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------- |
 | 8    | [Change](https://github.com/amazeeio/lagoon/commit/2a08bb4361b86099224dda25b4110e818dfde934#diff-9df0005994e9aade97313db71c5fe59583ce3204aa6b2718dc4f8cb524f9863e)                          | Rename service image repo                       |
 | 24   | [Change](https://github.com/amazeeio/lagoon/commit/2a08bb4361b86099224dda25b4110e818dfde934#diff-689f1db6708d8b4a4ca10c9d6712b4cf5a693d96b074d8b10a834a2a99fb06f6)                          | Rename service image repo                       |

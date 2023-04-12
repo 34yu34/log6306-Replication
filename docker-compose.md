@@ -2,7 +2,7 @@
 
 ## Quentin
 
-| Line | Link                                                                                                                                                                                  | Note                                                                                                                         |
+| Line | Links                                                                                                                                                                                 | Notes                                                                                                                        |
 | ---- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
 | 16   | [Change](https://github.com/mars-lan/WhereHows/commit/4f221f9a126f6f176f02f85f45da9b5a6b43e1f7#diff-dbcc4a7111b78f2adfb075704549e728bd611396aa3b9b3fb792d0a215058b29)                 | Move build attribute from docker-compose to a separate script. Maybe add this to the possible refactoring types?             |
 | 32   | [Change](https://github.com/CogStack/cogstack/commit/4ce8be25d8914e44f550e7eee60e8cc1d453ede4#diff-06608349690667980da98110a82b27cb345bed7adc842216878d9e710fbcb660)                  | ✔️                                                                                                                            |
@@ -19,7 +19,7 @@
 
 ## Billy
 
-| line | Links                                                                                                                                                                             | Notes                                                                    |
+| Line | Links                                                                                                                                                                             | Notes                                                                    |
 | ---- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------ |
 | 8    | [Change](https://github.com/xhochy/arrow/commit/7bc2b0f3579b6fc2d1d6d9797f3a1e5e3726131f#diff-e45e45baeda1c1e73482975a664062aa56f20c03dd9d64a827aba57775bed0d3)                   | Change sectionning(reorder) + a lot of command addition (not a refactor) |
 | 24   | [Change](https://github.com/CogStack/cogstack/commit/ae394ce37df66ffe93d1440eba60b3390775151a#diff-9c45f2630b8cf582d495919f837b79e7eac2e70348c8cb0e3fee42acebbc5c23)              | ✔️                                                                        |

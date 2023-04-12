@@ -72,8 +72,8 @@ The commits ranged from 1 to 12 per project, with a total of 611 files changed.
 The replication was performed on around 10\% of the data from the first study (62 file changes at most).
 The process for the selection of this subset was initially random based.
 However, further looking into the data, we decided to keep the same ratios of Docker and docker-compose files.
-Finally, taking the whole list of commits from the replication package, every \(n\) commit (depending on the list size) were taken into the subdata set.
-This permitted to spread all the analyzed data equally across projects and changes, leading to a fair number of commits from each projects in our subset of data.
+Finally, taking the whole list of commits from the replication package, we took all commits which are multiple of 8.
+This allowed to spread all the analyzed data equally across projects and changes, leading to a fair number of commits from each projects in our subset of data.
 A manual check was then done on all selected changes, where the study conclusion where looked at to be either confirm or infirm.
 
 \begin{quote}
@@ -101,6 +101,8 @@ At the end of the second pass, we gathered groups of commits that we thought mig
 Our team added the categories that all were in favor of.
 
 \section{Results}
+
+
 
 \section{Implication and Discussion}
 
