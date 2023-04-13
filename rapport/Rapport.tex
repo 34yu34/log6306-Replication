@@ -121,6 +121,20 @@ In the continuity of this first problem, we also note inconsistencies in the des
 Some descriptions describe all changes made in a commit, whereas others only describe the changes that are considered as refactoring.
 Although this issue may not be reflected in the final results, it is important to take this into account in case someone wants to reuse these results in another study.
 
+Compiling all our observations, we were able to calculate both the recall (calculated as the amount of commit that rightfully were refactors) and the precision (calculated the amount of correct assumptions by the authors). 
+The recall was of $\frac{70}{72}$ or  97 \% which is really good considering the subjective quality of the work being done here. 
+The precision, however, was calculated as $\frac{43}{72}$ or 59.7 \%.
+
+As for the RQ1, we notice 3 different changes that weren't part of the intial study, but that we think should be added.
+First, Remooving, adding or rewritting comments. 
+As much as this types of change does not affect performances, we think it does have an impact on the readability and therefore should be considered.
+Second, Resectionning or transfering commands between files. 
+The authors seems to have focus on each files individually during their study which is normal as the huge amount of worked they had.
+However, when looking at a commit as a whole, we see some times some part of the code being moved from dockerfiles to docker-compose. the opposite also happens.
+Third, some variables where extracted and not removed.  
+Some of the removal inside dockerfiles where actually variables being moved to their own docker-file. 
+This was considered by the authors as a removed variablke, but we think it should be a different type called extarcting.
+
 % \section{Implication and Discussion}
 
 \section{Validity}
@@ -137,6 +151,7 @@ To minimize the impact on that end, we decided that unless all team members agre
 Also, every type added went through a discussion form the whole team where every member had to agree in order for that category to be added.
 
 \section{Conclusion}
+
 This study helped us dwelve deeper into the different refactors that happen around Docker projects.
 We were able to see that manual checking can lead to a very variable array of solutions.
 We also observed that new potential categories could be added to the projects to add more variety to the refactorings proposed by the main article authors.
